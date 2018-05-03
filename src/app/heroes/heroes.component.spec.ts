@@ -1,7 +1,14 @@
+import { Component, Input } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { HeroesComponent } from './heroes.component';
+import { Hero } from '../hero';
+
+@Component({ selector: 'app-hero-detail', template: '' })
+class HeroDetailComponentStub {
+  @Input() hero: Hero;
+}
 
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
@@ -10,7 +17,8 @@ describe('HeroesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        HeroesComponent
+        HeroesComponent,
+        HeroDetailComponentStub
       ],
       imports: [
         FormsModule
