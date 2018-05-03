@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HeroesComponent } from './heroes.component';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { MessageService } from '../message.service';
 
 @Component({ selector: 'app-hero-detail', template: '' })
 class HeroDetailComponentStub {
@@ -25,7 +26,8 @@ describe('HeroesComponent', () => {
         FormsModule
       ],
       providers: [
-        HeroService
+        HeroService,
+        MessageService
       ],
     })
     .compileComponents();

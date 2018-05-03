@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 @Component({ selector: 'app-heroes', template: '' })
 class HeroesComponentStub {}
 
+@Component({ selector: 'app-messages', template: '' })
+class MessagesComponentStub {}
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        HeroesComponentStub
+        HeroesComponentStub,
+        MessagesComponentStub
       ],
     }).compileComponents();
   }));
