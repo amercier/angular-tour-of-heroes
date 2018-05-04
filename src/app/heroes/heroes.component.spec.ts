@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HeroesComponent } from './heroes.component';
 import { Hero } from '../hero';
@@ -25,7 +26,8 @@ describe('HeroesComponent', () => {
       ],
       imports: [
         FormsModule,
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
       ],
       providers: [
         HeroService,
