@@ -1,24 +1,19 @@
-import { Component } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 
-import { DashboardComponent } from './dashboard.component';
+import { HeroSearchComponent } from './hero-search.component';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 
-@Component({ selector: 'app-hero-search', template: '' })
-class HeroSearchComponentStub {}
-
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
+describe('HeroSearchComponent', () => {
+  let component: HeroSearchComponent;
+  let fixture: ComponentFixture<HeroSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        DashboardComponent,
-        HeroSearchComponentStub
+        HeroSearchComponent
       ],
       providers: [
         HeroService,
@@ -33,7 +28,7 @@ describe('DashboardComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
+    fixture = TestBed.createComponent(HeroSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
