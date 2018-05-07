@@ -1,0 +1,13 @@
+language: node_js
+node_js: node
+addons:
+  chrome: stable
+before_install:
+  - npm install -g @angular/cli
+script:
+  # Read https://docs.travis-ci.com/user/chrome#Sandboxing
+  - ng test --single-run --browsers ChromeHeadlessNoSandbox
+  - ng e2e --config protractor-ci.conf.js
+cache:
+  directories:
+    - $HOME/.npm
