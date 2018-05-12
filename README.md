@@ -4,6 +4,7 @@
 with Continuous Integration, running unit and end-to-end tests on [Travis CI](https://travis-ci.org/).
 
 [![Build Status](https://travis-ci.org/amercier/angular-tour-of-heroes.svg?branch=master)](https://travis-ci.org/amercier/angular-tour-of-heroes)
+[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/angular-tour-of-heroes/master.svg)](https://codecov.io/github/amercier/angular-tour-of-heroes?branch=master)
 ![Angular version](https://img.shields.io/badge/angular-5.2.0-blue.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.

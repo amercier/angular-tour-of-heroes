@@ -6,8 +6,10 @@ before_install:
   - npm install -g @angular/cli
 script:
   # Read https://docs.travis-ci.com/user/chrome#Sandboxing
-  - ng test --single-run --browsers ChromeHeadlessNoSandbox
+  - ng test --single-run --browsers ChromeHeadlessNoSandbox --code-coverage
   - ng e2e --config protractor-ci.conf.js
+after_success:
+  - npx codecov
 cache:
   directories:
     - $HOME/.npm
