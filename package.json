@@ -23,6 +23,7 @@
     "@angular/router": "^6.0.1",
     "angular-in-memory-web-api": "^0.6.0",
     "core-js": "^2.4.1",
+    "karma-notify-reporter": "^1.0.1",
     "rxjs": "^6.1.0",
     "zone.js": "^0.8.19"
   },
