@@ -6,7 +6,7 @@ before_script:
   - npm run lint
 script:
   # Read https://docs.travis-ci.com/user/chrome#Sandboxing
-  - npm test -- --browsers ChromeHeadlessNoSandbox --code-coverage
+  - npm test -- --no-progress --no-watch --browsers ChromeHeadlessNoSandbox --code-coverage
   - npm run e2e -- --protractor-config protractor-ci.conf.js
 after_success:
   - npx codecov

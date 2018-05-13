@@ -5,9 +5,12 @@ with Continuous Integration, running unit and end-to-end tests on [Travis CI](ht
 
 [![Build Status](https://travis-ci.org/amercier/angular-tour-of-heroes.svg?branch=master)](https://travis-ci.org/amercier/angular-tour-of-heroes)
 [![Test Coverage](https://img.shields.io/codecov/c/github/amercier/angular-tour-of-heroes/master.svg)](https://codecov.io/github/amercier/angular-tour-of-heroes?branch=master)
-[![Angular version](https://img.shields.io/badge/angular-6.0.1-blue.svg)](./package.json#L15-L23)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4 (updated to 6.0.1).
+
+[![Angular version](https://img.shields.io/badge/angular-6.0.1-blue.svg)](./package.json#L15-L23)
+[![Dependency Status](https://img.shields.io/david/amercier/angular-tour-of-heroes.svg)](https://david-dm.org/amercier/angular-tour-of-heroes)
+[![devDependency Status](https://img.shields.io/david/dev/amercier/angular-tour-of-heroes.svg)](https://david-dm.org/amercier/angular-tour-of-heroes#info=devDependencies)
 
 ## Changelog
 
