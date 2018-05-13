@@ -2,14 +2,12 @@ language: node_js
 node_js: node
 addons:
   chrome: stable
-before_install:
-  - npm install -g @angular/cli
 before_script:
-  - ng lint
+  - npm run lint
 script:
   # Read https://docs.travis-ci.com/user/chrome#Sandboxing
-  - ng test --browsers ChromeHeadlessNoSandbox --code-coverage
-  - ng e2e --protractor-config protractor-ci.conf.js
+  - npm test -- --browsers ChromeHeadlessNoSandbox --code-coverage
+  - npm run e2e -- --protractor-config protractor-ci.conf.js
 after_success:
   - npx codecov
 cache:
