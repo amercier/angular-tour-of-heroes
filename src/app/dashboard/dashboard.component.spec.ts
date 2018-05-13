@@ -8,7 +8,7 @@ import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 
 @Component({ selector: 'app-hero-search', template: '' })
-class HeroSearchComponentStub {}
+class HeroSearchStubComponent {}
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -18,7 +18,7 @@ describe('DashboardComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         DashboardComponent,
-        HeroSearchComponentStub
+        HeroSearchStubComponent
       ],
       providers: [
         HeroService,

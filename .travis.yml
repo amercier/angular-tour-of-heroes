@@ -4,6 +4,8 @@ addons:
   chrome: stable
 before_install:
   - npm install -g @angular/cli
+before_script:
+  - ng lint
 script:
   # Read https://docs.travis-ci.com/user/chrome#Sandboxing
   - ng test --browsers ChromeHeadlessNoSandbox --code-coverage

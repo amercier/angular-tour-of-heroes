@@ -10,7 +10,7 @@ import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 
 @Component({ selector: 'app-hero-detail', template: '' })
-class HeroDetailComponentStub {
+class HeroDetailStubComponent {
   @Input() hero: Hero;
 }
 
@@ -22,7 +22,7 @@ describe('HeroesComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         HeroesComponent,
-        HeroDetailComponentStub
+        HeroDetailStubComponent
       ],
       imports: [
         FormsModule,

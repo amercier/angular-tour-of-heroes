@@ -4,18 +4,18 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 @Component({ selector: 'app-heroes', template: '' })
-class HeroesComponentStub {}
+class HeroesStubComponent {}
 
 @Component({ selector: 'app-messages', template: '' })
-class MessagesComponentStub {}
+class MessagesStubComponent {}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        HeroesComponentStub,
-        MessagesComponentStub
+        HeroesStubComponent,
+        MessagesStubComponent
       ],
       imports: [
         RouterTestingModule
