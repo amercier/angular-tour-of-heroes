@@ -18,6 +18,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Added Travis CI configuration - [fbf17cc](https://github.com/amercier/angular-tour-of-heroes/commit/fbf17cca5f867b5a0e00f1bf3ee68953571149ed)
 - Implemented tutorial with testing in mind - [#1](https://github.com/amercier/angular-tour-of-heroes/pull/1)
 - Updated Angular to version 6 - [#4](https://github.com/amercier/angular-tour-of-heroes/pull/4)
+- Updated Angular to version 7 - [#14](https://github.com/amercier/angular-tour-of-heroes/pull/14)
 
 ## Development server
 
